@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.zonas-container > h2 {
+  color: black;
+}
+
+.zonas-wrapper {
+  margin: 0;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.zona {
+  width: 20%;
+  background-color: #242424;
+  padding: 3px 9px;
+  border-radius: 7px;
+  padding-top: 2em;
+}
+
+.zona-radio {
+  line-height: 9em;
+}
+
+.zona-title {
+  margin: 0;
+}
+
+.zona-price {
+  margin: 0;
+}
+
+.zona-img {
+  width: 100%;
+  border: 1px solid silver;
+  border-radius: 7px;
+  filter: contrast(1.2);
+  margin-top: 1em;
+}
+
+.zonas-submit {
+  font-weight: 300;
+  padding: 3px 9px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.reserva {
+  display: flex;
+  flex-direction: row;
+}
+
+.reserva-pregunta {
+  width: 60vw;
+  border-right: 2px solid silver;
+  margin-right: 1em;
+}
+
+.reserva-pregunta > form {
+  margin-bottom: 7em;
+}
+
+.reserva-pregunta > form > input {
+  height: 2em;
+  width: 30%;
+}
+
+.reserva-buttons {
+  width: 30%;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.reserva-buttons > input {
+  transition: all .2s ease-in-out;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+  font-size: 1em;
+  font-weight: 500;
+  height: 41px;
+  width: 80px;
+  border-radius: 9px;
+}
+
+.reserva-buttons > input:hover {
+  border-color: #646cff;
+  background-color: #1a1a1a;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.error-msg {
+  font-weight: 300;
+  color: #f23;
+}
+
+.reserva-datos {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  padding: 2em;
+  background-color: #369;
+  border-radius: 3px;
+}
+
+.reset-btn {
+  margin-top: 2em;
+}
+
+.reserva-datos > h2 {
+  width: 100%;
+}
+
+.reserva-nombre {
+  font-weight: 300;
+  font-size: .7em;
+  margin-left: 2em;
+}
+
+.reserva-datos > img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.reserva-datos > p {
+  margin: 0;
+}
+
+.reserva-item {
+  font-weight: 700;
+}
+
+.reserva-datos > h3 {
+  margin: 0;
+}
