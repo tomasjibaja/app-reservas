@@ -8,7 +8,7 @@ const Router = () => {
   const {reserva} = useContext(Context)
   return (
     <Routes>
-      <Route path={'/'} element={ <Paso1 />} />
+      <Route path={'/'} element={ <Reserva />} />
       <Route path={'/reserva'} element={ reserva.lugar == undefined ? <Navigate to='/' /> : <Reserva /> } />
       <Route path={'/*'} element={ <Navigate to='/' /> } />
     </Routes>

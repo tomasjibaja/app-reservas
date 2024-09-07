@@ -26,6 +26,10 @@ const Reserva = () => {
     setReserva({})
   }
 
+  const imprimir = () => {
+    window.print()
+  }
+
   return (
     <>
        <div className='reserva'>
@@ -60,9 +64,16 @@ const Reserva = () => {
           {reserva.dias && <h3>Total: <span className='reserva-precio-final'>
             ${reserva.precio * (reserva.habitaciones || 1) * (reserva.dias || 1) * (reserva.personas || 1)}
           </span></h3>}
+          {reserva.dias && <img id='qr' src='./qr.png' alt='qr'/>}
         </div>
       </div>
-      {paso == 4 && (<button className='reset-btn' onClick={resetReserva}>Volver al principio</button>)}
+      {paso == 4 && (
+        <div className='end-buttons'>
+        <button className='print-btn' onClick={imprimir}>Imprimir</button>
+          <button className='reset-btn' onClick={resetReserva}>Volver al principio</button>
+        </div>
+      
+      )}
     </>
    
   )

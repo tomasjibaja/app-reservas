@@ -63,21 +63,25 @@
 
 .reserva-pregunta {
   width: 60vw;
-  border-right: 2px solid silver;
-  margin-right: 1em;
+  border-bottom: 2px solid silver;
+  margin-bottom: 1em;
 }
 
 .reserva-pregunta > form {
-  margin-bottom: 7em;
+  margin-bottom: 2em;
+}
+
+.reserva-pregunta > button {
+  margin-bottom: 2em;
 }
 
 .reserva-pregunta > form > input {
   height: 2em;
-  width: 30%;
+  width: 70%;
 }
 
 .reserva-buttons {
-  width: 30%;
+  width: 70%;
   margin: 1em auto;
   display: flex;
   flex-direction: row;
@@ -110,17 +114,32 @@
 }
 
 .reserva-datos {
-  width: 60vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  padding: 2em;
+  padding: 0 2em 1em;
   background-color: #369;
-  border-radius: 3px;
+  border-radius: 7px;
+  position: relative;
 }
 
-.reset-btn {
+#qr {
+  position: absolute;
+  width: 25%;
+  bottom: .5em;
+  right: 1.5em;
+}
+
+.end-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reset-btn, .print-btn {
   margin-top: 2em;
 }
 
@@ -137,6 +156,7 @@
 .reserva-datos > img {
   width: 100%;
   margin-bottom: 1em;
+  border: 1px solid grey;
 }
 
 .reserva-datos > p {
@@ -156,6 +176,10 @@
   .zonas-container > h2 {
     font-size: 1.6em;
   }
+
+  .zona-radio {
+    transform: scale(2.5) translateY(-4px);
+  }
   
   .zonas-wrapper {
     flex-direction: row;
@@ -171,8 +195,29 @@
     align-items: unset;
   }
 
+  .reserva-pregunta {
+    border-right: 2px solid silver;
+    margin-right: 1em;
+    border-bottom: none;
+    margin-bottom: unset;
+  }
+
+  .reserva-pregunta > form > input {
+    width: 50%;
+  }
+
+  .reserva-buttons {
+    width: 45%;
+  }
+
   .reserva-datos {
-    width: 60vw;
+    width: 30vw;
+    padding: 1em 2em 2em;
+  }
+
+  #qr {
+    right: 2em;
+    bottom: 1em;
   }
 
 }
